@@ -22,6 +22,7 @@ URLS = {
         "bugs": "https://animalcrossing.fandom.com/wiki/Bugs_(New_Horizons)",
         "fossils": "https://animalcrossing.fandom.com/wiki/Fossils_(New_Horizons)",
         "artworks": "https://animalcrossing.fandom.com/wiki/Artwork_(New_Horizons)",
+        "deep_sea_creatures": "https://animalcrossing.fandom.com/wiki/Deep-sea_creatures_(New_Horizons)",
     },
 
     # Crafting
@@ -147,6 +148,39 @@ def scrape_bugs(url_key):
         item_id += 1
         items[item_key] = item
     dump_data(items, "museum/bugs")
+
+def scrape_deep_sea_creatures(url_key):
+    # contains all deep-sea creatures
+    items = {}
+    # get response from url and create soup
+    url = URLS["museum"][url_key]
+    response = requests.get(url, timeout=5)
+    soup = BeautifulSoup(response.content, "html.parser")
+    # find the table to scrape from
+    table = soup("table", {"class": "sortable"})[0]
+    tableSouthern = soup("table", {"class": "sortable"})[1]
+    item_id = 1
+    for tr in table("tr")[1:]:
+        name = tr("td")[0].text.strip()
+        item_key = name.replace(" ", "_").replace("-", "_")
+        item = {
+            "name": name,
+            "id": item_id,
+            "wiki_url": URLS["wiki"] + tr("td")[0].find("a")["href"],
+            "icon_url": tr("a")[1]['href'],
+            "image_url": tr("a")[1]['href'],
+            "price": parse_price(tr("td")[2].text),
+            "shadow_size": tr("td")[3].text.strip(),
+            "swimming_pattern": tr("td")[4].text.strip(),
+            "time": tr("td")[5].text.strip().split(" & "),
+            "months": {
+                "northern": parse_months([tr("td")[6], tr("td")[7], tr("td")[8], tr("td")[9], tr("td")[10], tr("td")[11], tr("td")[12], tr("td")[13], tr("td")[14], tr("td")[15], tr("td")[16], tr("td")[17]]),
+                "southern": [] # TODO
+            }
+        }
+        item_id += 1
+        items[item_key] = item
+    dump_data(items, "museum/deep_sea_creatures")
 
 def scrape_fish(url_key): 
     items = {}
@@ -622,6 +656,7 @@ if __name__ == "__main__":
     scrape_fish("fish")
     # scrape_fossils("fossils")
     # scrape_artworks("artworks")
+    scrape_deep_sea_creatures("deep_sea_creatures")
 
     # -- Crafting --
     # scrape_tools("tools")
