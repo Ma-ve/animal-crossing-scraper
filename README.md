@@ -9,16 +9,26 @@ Feel free to use the JSON files! Some of the pages on the wiki are incomplete, s
 All JSON files are stored in /data
 
 *-- Completed --*  
-Critters
+/museums
 - bugs.json
 - fish.json
 - fossils.json
+- artwork.json
 
-Characters
+/characters
 - villagers.json
 
+/flowers
+- availability.json
+- genetics_others.json
+- genetics_rose.json
+- hybridization_advanced.json
+- hybridization_simple.json
+
+/music
+
 *-- Incomplete --*  
-DIY Recipes
+/crafting
 - tools.json
 - equipments.json
 - housewares.json
@@ -26,6 +36,22 @@ DIY Recipes
 - wallMounteds.json
 - wallpaperRugsFloorings.json
 - others.json
+
+/clothing
+- tops.json
+- bottoms.json
+- dresses.json
+- hats.json
+- accessories.json
+- socks.json
+- shoes.json
+- bags.json
+- umbrellas.json
+
+
+
+## JSON fields
+Price: -1 indicates the data is not available yet. 
 
 ## Set Up
 1. In the animal-crossing-scraper root directory, clone the project using 
@@ -39,7 +65,7 @@ python -m venv venv
 ```
 
 3. Activate the virtual environment
-- Windows: `venv\Scripts\activate.bat`
+- Windows: `venv\Scripts\activate`
 - Linux/Mac: `source venv/bin/activate`
 
 4. Install required packages
