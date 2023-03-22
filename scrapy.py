@@ -71,46 +71,24 @@ def scrape_villagers(url_key):
     response = requests.get(url, timeout=5)
     soup = BeautifulSoup(response.content, "html.parser")
     tables = soup("table", {"class": "sortable"})
-    items = {}
+    items = []
+    index = 0
+    villager_id = 1
     # these headers must be scraped from their individual wiki page
     headers = ["initial_clothes", "caption", "home_request", "skill", "goal", "coffee", "style", "favorite_song", "appearances"]
     for tr in tables[0]("tr")[1:]:
         name = tr("td")[0].text.strip()
         item = {
-            "wiki_url": "https://animalcrossing.fandom.com" + tr("td")[0].a.get("href"),
-            "image_url": tr("td")[1]("a")[0]("img")[-1]["src"].replace("scale-to-width-down/100", ""), # fix data:images
+            "name": name,
+            "imageLink": tr("td")[1]("a")[0]["href"],
             "gender": parse_gender(tr("td")[2]),
             "personality": parse_personality(tr("td")[2]),
             "species": tr("td")[3].text.strip(),
             "birthday": tr("td")[4].text.strip(),
-            "initial_phrase": tr("td")[5].text.strip().replace("\"", ""),
-            "hobbies": tr("td")[6].text.strip(),
+            "catchPhrase": tr("td")[5].text.strip().replace("\"", ""),
         }
-        # scrape additional information from the character's page
-        for header in headers: 
-            item[header] = None
-        villager_response = requests.get(item["wiki_url"], timeout=5)
-        villager_soup = BeautifulSoup(villager_response.content, "html.parser")
-        aside = villager_soup("aside")[0]
-        if len(aside("figcaption")) > 0:
-            item["caption"] = aside("figcaption")[0].text.replace("“", "").replace("”", "")
-        for div in aside("div", {"class": "pi-item"}):
-            if not div.find("div").text == "Unknown":
-                if div("h3")[0].text.lower().replace(" ", "_") in headers:
-                    item[div("h3")[0].text.lower().replace(" ", "_")] = div.find("div").text
-        # format unformatted text 
-        if not item["coffee"] is None: 
-            coffee = item["coffee"].split(",")
-            item["coffee"]  = {
-                "type": coffee[0],
-                "milk": coffee[1],
-                "sugar": coffee[2]
-            }
-        if not item["appearances"] is None:
-            item["appearances"] = item["appearances"].split(", ")
-        if not item["favorite_song"] is None:
-            item["favorite_song"] = item["favorite_song"].replace("[[", "").replace("]]", "")
-        items[name] = item
+        items.append(item)
+        index += 1
     dump_data(items, "character/villagers")
 
 def scrape_bugs(url_key):
@@ -151,7 +129,7 @@ def scrape_bugs(url_key):
 
 def scrape_deep_sea_creatures(url_key):
     # contains all deep-sea creatures
-    items = {}
+    items = []
     # get response from url and create soup
     url = URLS["museum"][url_key]
     response = requests.get(url, timeout=5)
@@ -179,7 +157,7 @@ def scrape_deep_sea_creatures(url_key):
             }
         }
         item_id += 1
-        items[item_key] = item
+        items.append(item)
     dump_data(items, "museum/deep_sea_creatures")
 
 def scrape_fish(url_key): 
@@ -649,7 +627,7 @@ def scrape_music(key):
 
 if __name__ == "__main__":
     # -- Characters --
-    # scrape_villagers("villagers")
+#     scrape_villagers("villagers")
 
     # -- Museum --
     scrape_bugs("bugs")

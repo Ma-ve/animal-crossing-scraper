@@ -1,5 +1,5 @@
-{
-    "Seaweed": {
+[
+    {
         "name": "Seaweed",
         "id": 1,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Seaweed",
@@ -27,7 +27,7 @@
             "southern": []
         }
     },
-    "Sea_grapes": {
+    {
         "name": "Sea grapes",
         "id": 2,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_grapes",
@@ -49,7 +49,7 @@
             "southern": []
         }
     },
-    "Sea_cucumber": {
+    {
         "name": "Sea cucumber",
         "id": 3,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_cucumber",
@@ -73,7 +73,7 @@
             "southern": []
         }
     },
-    "Sea_pig": {
+    {
         "name": "Sea pig",
         "id": 4,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_pig",
@@ -95,7 +95,7 @@
             "southern": []
         }
     },
-    "Sea_star": {
+    {
         "name": "Sea star",
         "id": 5,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_star",
@@ -125,7 +125,7 @@
             "southern": []
         }
     },
-    "Sea_urchin": {
+    {
         "name": "Sea urchin",
         "id": 6,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_urchin",
@@ -148,7 +148,7 @@
             "southern": []
         }
     },
-    "Slate_pencil_urchin": {
+    {
         "name": "Slate pencil urchin",
         "id": 7,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Slate_pencil_urchin",
@@ -171,7 +171,7 @@
             "southern": []
         }
     },
-    "Sea_anemone": {
+    {
         "name": "Sea anemone",
         "id": 8,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_anemone",
@@ -201,7 +201,7 @@
             "southern": []
         }
     },
-    "Moon_jellyfish": {
+    {
         "name": "Moon jellyfish",
         "id": 9,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Moon_jellyfish",
@@ -222,7 +222,7 @@
             "southern": []
         }
     },
-    "Sea_slug": {
+    {
         "name": "Sea slug",
         "id": 10,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_slug",
@@ -252,7 +252,7 @@
             "southern": []
         }
     },
-    "Pearl_oyster": {
+    {
         "name": "Pearl oyster",
         "id": 11,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Pearl_oyster_(deep-sea_creature)",
@@ -282,7 +282,7 @@
             "southern": []
         }
     },
-    "Mussel": {
+    {
         "name": "Mussel",
         "id": 12,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Mussel",
@@ -307,7 +307,7 @@
             "southern": []
         }
     },
-    "Oyster": {
+    {
         "name": "Oyster",
         "id": 13,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Oyster",
@@ -331,7 +331,7 @@
             "southern": []
         }
     },
-    "Scallop": {
+    {
         "name": "Scallop",
         "id": 14,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Scallop",
@@ -361,7 +361,7 @@
             "southern": []
         }
     },
-    "Whelk": {
+    {
         "name": "Whelk",
         "id": 15,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Whelk",
@@ -391,7 +391,7 @@
             "southern": []
         }
     },
-    "Turban_shell": {
+    {
         "name": "Turban shell",
         "id": 16,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Turban_shell",
@@ -416,7 +416,7 @@
             "southern": []
         }
     },
-    "Abalone": {
+    {
         "name": "Abalone",
         "id": 17,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Abalone",
@@ -442,7 +442,7 @@
             "southern": []
         }
     },
-    "Gigas_giant_clam": {
+    {
         "name": "Gigas giant clam",
         "id": 18,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Gigas_giant_clam",
@@ -465,7 +465,7 @@
             "southern": []
         }
     },
-    "Chambered_nautilus": {
+    {
         "name": "Chambered nautilus",
         "id": 19,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Chambered_nautilus",
@@ -490,7 +490,7 @@
             "southern": []
         }
     },
-    "Octopus": {
+    {
         "name": "Octopus",
         "id": 20,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Octopus_(deep-sea_creature)",
@@ -520,7 +520,7 @@
             "southern": []
         }
     },
-    "Umbrella_octopus": {
+    {
         "name": "Umbrella octopus",
         "id": 21,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Umbrella_octopus",
@@ -544,7 +544,7 @@
             "southern": []
         }
     },
-    "Vampire_squid": {
+    {
         "name": "Vampire squid",
         "id": 22,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Vampire_squid",
@@ -566,7 +566,7 @@
             "southern": []
         }
     },
-    "Firefly_squid": {
+    {
         "name": "Firefly squid",
         "id": 23,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Firefly_squid",
@@ -588,7 +588,7 @@
             "southern": []
         }
     },
-    "Gazami_crab": {
+    {
         "name": "Gazami crab",
         "id": 24,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Gazami_crab",
@@ -612,7 +612,7 @@
             "southern": []
         }
     },
-    "Dungeness_crab": {
+    {
         "name": "Dungeness crab",
         "id": 25,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Dungeness_crab",
@@ -637,7 +637,7 @@
             "southern": []
         }
     },
-    "Snow_crab": {
+    {
         "name": "Snow crab",
         "id": 26,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Snow_crab",
@@ -661,7 +661,7 @@
             "southern": []
         }
     },
-    "Red_king_crab": {
+    {
         "name": "Red king crab",
         "id": 27,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Red_king_crab",
@@ -684,7 +684,7 @@
             "southern": []
         }
     },
-    "Acorn_barnacle": {
+    {
         "name": "Acorn barnacle",
         "id": 28,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Acorn_barnacle",
@@ -714,7 +714,7 @@
             "southern": []
         }
     },
-    "Spider_crab": {
+    {
         "name": "Spider crab",
         "id": 29,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Spider_crab",
@@ -734,7 +734,7 @@
             "southern": []
         }
     },
-    "Tiger_prawn": {
+    {
         "name": "Tiger prawn",
         "id": 30,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Tiger_prawn",
@@ -756,7 +756,7 @@
             "southern": []
         }
     },
-    "Sweet_shrimp": {
+    {
         "name": "Sweet shrimp",
         "id": 31,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sweet_shrimp",
@@ -780,7 +780,7 @@
             "southern": []
         }
     },
-    "Mantis_shrimp": {
+    {
         "name": "Mantis shrimp",
         "id": 32,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Mantis_shrimp",
@@ -810,7 +810,7 @@
             "southern": []
         }
     },
-    "Spiny_lobster": {
+    {
         "name": "Spiny lobster",
         "id": 33,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Spiny_lobster",
@@ -831,7 +831,7 @@
             "southern": []
         }
     },
-    "Lobster": {
+    {
         "name": "Lobster",
         "id": 34,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Lobster_(deep-sea_creature)",
@@ -854,7 +854,7 @@
             "southern": []
         }
     },
-    "Giant_isopod": {
+    {
         "name": "Giant isopod",
         "id": 35,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Giant_isopod",
@@ -877,7 +877,7 @@
             "southern": []
         }
     },
-    "Horseshoe_crab": {
+    {
         "name": "Horseshoe crab",
         "id": 36,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Horseshoe_crab",
@@ -898,7 +898,7 @@
             "southern": []
         }
     },
-    "Sea_pineapple": {
+    {
         "name": "Sea pineapple",
         "id": 37,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Sea_pineapple",
@@ -921,7 +921,7 @@
             "southern": []
         }
     },
-    "Spotted_garden_eel": {
+    {
         "name": "Spotted garden eel",
         "id": 38,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Spotted_garden_eel",
@@ -945,7 +945,7 @@
             "southern": []
         }
     },
-    "Flatworm": {
+    {
         "name": "Flatworm",
         "id": 39,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Flatworm",
@@ -965,7 +965,7 @@
             "southern": []
         }
     },
-    "Venus'_flower_basket": {
+    {
         "name": "Venus' flower basket",
         "id": 40,
         "wiki_url": "https://animalcrossing.fandom.com/wiki/Venus%27_flower_basket",
@@ -988,4 +988,4 @@
             "southern": []
         }
     }
-}
+]

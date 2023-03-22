@@ -77,9 +77,9 @@ def parse_personality(tag):
 
 def parse_gender(tag):
     if tag.text.strip()[0] == "♂":
-        return "male"
+        return "Male"
     elif tag.text.strip()[0] == "♀":
-        return "female"
+        return "Female"
     return None    
 
 
